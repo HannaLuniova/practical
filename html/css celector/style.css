@@ -1,0 +1,40 @@
+#wrapper* {
+    margin: 20px;
+}
+
+.inner {
+}
+.text p {
+    font-size: 24px;
+}
+/* следующий тег р после img */
+/* img+ p {
+ color: blueviolet;
+} */
+
+/* все теги р после img */
+img ~ p {
+    color: blueviolet;
+}
+/* к дочерним li к ul */
+.list > li {
+    border: 1px solid black;
+}
+/* вычислить по слову */
+a[href*="link"]{
+    color: crimson;
+}
+/* те которые начинаются на слово */
+a[href^="https"]{
+    color: rgb(172, 199, 22);
+}
+
+img[src$=".jpg"]{
+    border-radius: 50%;
+}
+
+/* применяется ко всем р кроме с классом item */
+p:not(.item){
+border: 1px solid #000;
+border-radius: 20px;
+}
