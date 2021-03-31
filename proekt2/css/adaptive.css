@@ -19,22 +19,6 @@
         width: 400px;
         height: 400px;
     }
-    .footer__top-inner {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .footer__top-inner {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .footer__menu {
-        width: 100%;
-        margin-bottom: 50px;
-    }
-    .footer__menu-list {
-        margin: 0 auto;
-        text-align: center;
-    }
 }
 @media (max-width: 1199px) {
     .reason__inner {
@@ -58,25 +42,40 @@
     .best {
         min-height: 600px;
     }
+    .footer__menu {
+        margin-left: 100px;
+    }
 }
 
 @media (max-width: 1140px) {
-    .about__inner {
+    .about__inner,
+    .footer__top-inner {
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: center;
     }
-    .reviews {
+
+    .reviews{
         width: 100%;
         margin-top: 50px;
     }
-    .blog {
+    .blog,
+    .footer__menu-list {
         margin-left: 150px;
+    }
+   .footer__question {
+       width: 100%;
+        margin-top: 100px;
     }
 }
 
 @media (max-width: 992px) {
-    .registr__form {
+    .registr__form,
+    .footer__top-inner {
         flex-wrap: wrap;
+    }
+       .registr__title{
+        font-size: 30px;
+    line-height: 28px;
     }
     .popular__img {
         width: 280px;
@@ -97,27 +96,16 @@
     .our-managers {
         margin: 0 auto;
     }
-    .blog {
+    .blog,
+    .footer__menu-list {
         margin: 50px auto;
         max-width: 420px;
         width: auto;
     }
-    .reviews {
+    .reviews,
+    .footer__question {
         margin: 0 auto;
         max-width: 420px;
-    }
-    .footer__form {
-        flex-direction: column;
-    }
-    .footer__form-input {
-        margin-bottom: 15px;
-        text-align: center;
-        width: 300px;
-    }
-    .footer__form-label {
-        text-align: center;
-        margin-bottom: 20px;
-        margin-right: 0;
     }
 }
 @media (max-width: 768px) {
@@ -130,9 +118,8 @@
     .menu__list-link {
         padding: 24px 10px 28px;
     }
-    .registr__title {
+     .registr__text {
         font-size: 20px;
-        line-height: 19px;
     }
     .registr__form-input::placeholder {
         line-height: 14px;
@@ -170,27 +157,40 @@
     .menu__list-link {
         padding: 20px 10px;
     }
+       .registr__title,
+    .reg {
+        font-size: 28px;
+    line-height: 28px;
+    }
+      .registr__text {
+        font-size: 16px;
+    }
+       .registr__title {
+    margin-bottom: 40px;
+}
+    .registr,
+    .popular,
+    .popular__inner {
+        padding: 30px 0;
+    }
     .popular__title {
         line-height: 42px;
         font-size: 36px;
-    }
-    .reason__title {
-        font-size: 28px;
-        line-height: 32px;
     }
     .best__title {
         padding-top: 20px;
     }
 }
 @media (max-width: 500px) {
-    .registr__title {
-        font-size: 15px;
-        line-height: 14px;
-    }
     .registr__form-btn {
         font-weight: 250;
         font-size: 15px;
     }
+        .application-btn {
+    padding: 10px 13px 9px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
     .best {
         min-height: 200px;
     }
@@ -212,10 +212,36 @@
     .blog__link {
         padding-left: 40px;
     }
+    .footer__menu {
+        margin-left: 0px;
+    }
+    .footer__menu-link {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .footer__form-question {
+        flex-direction: column;
+    }
+    .footer__form-title {
+        font-size: 16px;
+    }
+    .footer__form-input-question {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+        width: 300px;
+    }
+    .footer__form-label-question {
+        text-align: center;
+        margin-bottom: 0px;
+        margin-right: 0;
+        margin-top: 15px;
+    }
 }
 
 @media (max-width: 360px) {
-    .reason__title {
+    .reason__title, .registr__title,
+    .reg {
         font-size: 24px;
         line-height: 28px;
     }
@@ -226,15 +252,17 @@
         font-size: 28px;
         line-height: 28px;
     }
+     .registr__text {
+        font-size: 14px;
+    }
+    .registr__form-btn {
+        font-size: 10px;
+    }
+
 }
 
 @media (max-width: 350px) {
-    .registr__title {
-        font-size: 12px;
-        line-height: 14px;
-    }
     .registr__form-btn {
-        font-weight: 200;
         font-size: 10px;
     }
     .popular__title {
